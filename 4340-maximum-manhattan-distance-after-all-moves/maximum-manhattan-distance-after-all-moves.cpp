@@ -24,10 +24,17 @@ public:
             }
         }
 
-        dist = max(dist,distance(x,y+dc));
-        dist = max(dist,distance(x,y-dc));
-        dist = max(dist,distance(x+dc,y));
-        dist = max(dist,distance(x-dc,y));
+        if(x<0)x-=dc;
+        else x+=dc;
+
+        dist = max(dist,distance(x,y));
+        cout<<dist<<endl;
+        // dist = max(dist,distance(x,y-dc));
+        // cout<<dist<<endl;
+        // dist = max(dist,distance(x+dc,y));
+        // cout<<dist<<endl;
+        // dist = max(dist,distance(x-dc,y));
+        // cout<<dist<<endl;
 
 
         return dist;
