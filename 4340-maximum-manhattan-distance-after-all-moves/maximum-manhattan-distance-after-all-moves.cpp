@@ -1,6 +1,6 @@
 class Solution {
 public:
-    double distance(int x,int y) {
+    int distance(int x,int y) {
         return abs(x) + abs(y);
     }
 
@@ -8,7 +8,7 @@ public:
         int x = 0;
         int y = 0;
         int dc = 0;
-        double dist = 0;
+        int dist = 0;
 
         for(char c:moves) {
             if(c=='U'){
