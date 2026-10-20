@@ -27,7 +27,7 @@ public:
         if(x<0)x-=dc;
         else x+=dc;
 
-        dist = max(dist,distance(x,y));
+        dist = max(dist,abs(x) + abs(y));
         // cout<<dist<<endl;
         // dist = max(dist,distance(x,y-dc));
         // cout<<dist<<endl;
