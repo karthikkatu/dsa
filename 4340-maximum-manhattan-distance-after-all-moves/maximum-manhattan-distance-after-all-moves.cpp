@@ -10,7 +10,7 @@ public:
         int dc = 0;
         int dist = 0;
 
-        for(char c:moves) {
+        for(char& c:moves) {
             if(c=='U'){
                 y++;
             } else if(c=='D'){
